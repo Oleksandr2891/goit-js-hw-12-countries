@@ -1,0 +1,14 @@
+<h2 class="card-name">{{name}}</h2>
+<div class="card-country">
+    <div class="card-discription__position">
+        <p class="card-capital"><b>Capital: </b>{{capital}}</p>
+        <p class="card-population"><b>Population: </b>{{population}}</p>
+        <p class="card-languages"><b>Languages: </b></p>
+        <ul>
+            {{#each languages}}
+            <li class="list">{{name}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="card-flag__position" style="background-image: url({{flag}});"></div>
+</div>
